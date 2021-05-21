@@ -1,0 +1,6 @@
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\bin\Debug\Domain.Model.dll
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\bin\Debug\Domain.Model.pdb
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\obj\Debug\Domain.Model.csprojAssemblyReference.cache
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\obj\Debug\Domain.Model.csproj.CoreCompileInputs.cache
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\obj\Debug\Domain.Model.dll
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Domain.Model\obj\Debug\Domain.Model.pdb

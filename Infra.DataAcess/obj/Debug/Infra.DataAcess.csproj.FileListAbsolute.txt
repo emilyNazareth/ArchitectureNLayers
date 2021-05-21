@@ -1,0 +1,9 @@
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\bin\Debug\Infra.DataAcess.dll
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\bin\Debug\Infra.DataAcess.pdb
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\bin\Debug\Domain.Model.dll
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\bin\Debug\Domain.Model.pdb
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\obj\Debug\Infra.DataAcess.csprojAssemblyReference.cache
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\obj\Debug\Infra.DataAcess.csproj.CoreCompileInputs.cache
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\obj\Debug\Infra.DataAcess.csproj.CopyComplete
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\obj\Debug\Infra.DataAcess.dll
+C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Infra.DataAcess\obj\Debug\Infra.DataAcess.pdb
