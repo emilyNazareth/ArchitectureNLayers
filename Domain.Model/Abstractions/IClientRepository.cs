@@ -11,7 +11,7 @@ namespace Domain.Model.Abstractions
     {
         int add(Client client);
         int edit(Client client);
-        int remove(Client client);
+        int remove(int id);
         IEnumerable<Client> GetClients(string filter);
     }
 }

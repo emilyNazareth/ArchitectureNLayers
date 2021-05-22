@@ -19,9 +19,20 @@ namespace Aplication
 
         }
 
+        public int add(Client client)
+        {
+            return clientRepository.add(client);
+        }
         public IEnumerable<Client> GetClients(string filter)
         {
             return clientRepository.GetClients(filter);
         }
+
+        public int remove(int id)
+        {
+            return clientRepository.remove(id); 
+        }
+
+       
     }
 }

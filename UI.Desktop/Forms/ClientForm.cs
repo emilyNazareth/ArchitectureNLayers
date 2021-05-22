@@ -24,5 +24,40 @@ namespace UI.Desktop.Forms
         {
             dataGridView1.DataSource = client.GetClients("");
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            client.remove(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));            
+            dataGridView1.DataSource = client.GetClients("");
+            txtName.Clear();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {      
+            client.add(txtName.Text, txtLastName.Text, txtAddress.Text, txtCity.Text, 
+               txtEmail.Text, txtPhone.Text,txtJob.Text);
+            dataGridView1.DataSource = client.GetClients("");
+            txtName.Clear();
+            txtLastName.Clear();
+            txtAddress.Clear();
+            txtCity.Clear();
+            txtEmail.Clear();
+            txtJob.Clear();
+        }
     }
 }

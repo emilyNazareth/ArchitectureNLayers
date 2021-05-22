@@ -14,7 +14,22 @@ namespace Infra.DataAcess.Repository
     {
         public int add(Client client)
         {
-            throw new NotImplementedException();
+            SqlDataReader readRows;
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "sp_insert_client";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@name_", client.Name);
+            command.Parameters.AddWithValue("@last_name_", client.LastName);
+            command.Parameters.AddWithValue("@address_", client.Address);
+            command.Parameters.AddWithValue("@city_", client.City);
+            command.Parameters.AddWithValue("@email_", client.Email);
+            command.Parameters.AddWithValue("@phone_", client.Phone);
+            command.Parameters.AddWithValue("@job_", client.Job);                   
+            connection.Open();
+            readRows = command.ExecuteReader();
+            connection.Close();
+            return 1;
         }
 
         public int edit(Client client)
@@ -29,8 +44,7 @@ namespace Infra.DataAcess.Repository
             command.Connection = connection;
             command.CommandText = "VerRegistros";
             command.CommandType = CommandType.StoredProcedure;
-            //command.Parameters.AddWithValue("@condition", filter);
-
+           // command.Parameters.AddWithValue("@condition", filter);
             connection.Open();
             readRows = command.ExecuteReader();
 
@@ -55,9 +69,18 @@ namespace Infra.DataAcess.Repository
             return genericList;
         }
 
-        public int remove(Client client)
+        public int remove(int id)
         {
-            throw new NotImplementedException();
+            SqlDataReader readRows;
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "sp_delete_client";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@id_", id);
+            connection.Open();
+            readRows = command.ExecuteReader();         
+            connection.Close();
+            return 1;
         }
     }
 }

@@ -11,6 +11,20 @@ namespace UI.Desktop.ApplicationController
 {
     class ClientController
     {
+
+        public void add(string name, string lastName, string address, string city,
+            string email, string phone, string job)
+        {
+            Client client = new Client();
+            client.Name = name;
+            client.LastName = lastName;
+            client.Address = address;
+            client.City = city;
+            client.Email = email;
+            client.Phone = phone;
+            client.Job = job;
+            var clientStatus = new ClientService().add(client);
+        }
         public IEnumerable<ClientViewModel> GetClients(string filter)
         {
             var clientList = new ClientService().GetClients(filter);
@@ -34,6 +48,11 @@ namespace UI.Desktop.ApplicationController
 
             return viewModels;
 
+        }
+
+        public void remove(int id)
+        {
+            var clientList = new ClientService().remove(id);
         }
     }
 }
