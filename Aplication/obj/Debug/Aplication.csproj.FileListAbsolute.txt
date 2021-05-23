@@ -11,3 +11,16 @@ C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Ap
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Aplication\obj\Debug\Aplication.csproj.CopyComplete
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Aplication\obj\Debug\Aplication.dll
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\Aplication\obj\Debug\Aplication.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Aplication.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Aplication.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Domain.Model.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Domain.Services.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Infra.DataAcess.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Domain.Model.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Domain.Services.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\bin\Debug\Infra.DataAcess.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\obj\Debug\Aplication.csproj.AssemblyReference.cache
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\obj\Debug\Aplication.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\obj\Debug\Aplication.csproj.CopyComplete
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\obj\Debug\Aplication.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\Aplication\obj\Debug\Aplication.pdb

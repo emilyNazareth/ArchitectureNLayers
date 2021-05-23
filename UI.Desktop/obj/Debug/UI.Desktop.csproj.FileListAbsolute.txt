@@ -17,3 +17,22 @@ C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\UI
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\UI.Desktop\obj\Debug\UI.Desktop.exe
 C:\Users\emily\Documents\Desktop\UCR\2021\I Semestre\Ingenieria\TareaNcapasv2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Aplication.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Domain.Model.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Domain.Services.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Infra.DataAcess.dll
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Aplication.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Domain.Model.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Domain.Services.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\bin\Debug\Infra.DataAcess.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.csproj.AssemblyReference.cache
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.Forms.ClientForm.resources
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.cache
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.pdb

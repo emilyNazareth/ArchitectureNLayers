@@ -34,7 +34,23 @@ namespace Infra.DataAcess.Repository
 
         public int edit(Client client)
         {
-            throw new NotImplementedException();
+            
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "update_client";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@client_id", client.ID);
+            command.Parameters.AddWithValue("@name_", client.Name);
+            command.Parameters.AddWithValue("@last_name_", client.LastName);
+            command.Parameters.AddWithValue("@address_", client.Address);
+            command.Parameters.AddWithValue("@city_", client.City);
+            command.Parameters.AddWithValue("@email_", client.Email);
+            command.Parameters.AddWithValue("@phone_", client.Phone);
+            command.Parameters.AddWithValue("@job_", client.Job);
+            connection.Open();
+            command.ExecuteReader();
+            connection.Close();
+            return 1;
         }
 
         public IEnumerable<Client> GetClients(string filter)

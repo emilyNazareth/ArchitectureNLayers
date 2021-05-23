@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.Desktop.ApplicationController;
+using UI.Desktop.ViewModel;
 
 namespace UI.Desktop.Forms
 {
@@ -63,6 +64,69 @@ namespace UI.Desktop.Forms
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            //btnInsert.Dispose();
+            ClientViewModel clientModel = (ClientViewModel)dataGridView1.CurrentRow.DataBoundItem;
+            if(txtName.Text != "")
+                clientModel.Name = txtName.Text;
+            if(txtLastName.Text != "")
+                clientModel.LastName = txtLastName.Text;
+            if (txtAddress.Text != "")
+                clientModel.Address = txtAddress.Text;
+            if (txtCity.Text != "")
+                clientModel.City = txtCity.Text;
+            if (txtEmail.Text != "")
+                clientModel.Email = txtEmail.Text;
+            if (txtJob.Text != "")
+                clientModel.Job = txtJob.Text;
+            if (txtPhone.Text != "")
+                clientModel.Phone = txtPhone.Text;
+
+            client.edit(clientModel);
+
+            dataGridView1.DataSource = client.GetClients("");
+            txtName.Clear();
+            txtLastName.Clear();
+            txtAddress.Clear();
+            txtCity.Clear();
+            txtEmail.Clear();
+            txtJob.Clear();
+        }
+
+        private void searchbtn_Click(object sender, EventArgs e)
+        {
+            string searchValue = searchtxt.Text;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            try
+            {
+                bool valueResult = false;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    for (int i = 0; i < row.Cells.Count; i++)
+                    {
+                        if (row.Cells[i].Value != null && row.Cells[i].Value.ToString().Contains(searchValue))
+                        {
+                            int rowIndex = row.Index;
+                            dataGridView1.Rows[rowIndex].Selected = true;
+                            valueResult = true;
+                            break;
+                        }
+                    }
+
+                }
+                if (!valueResult)
+                {
+                    MessageBox.Show("Unable to find " + searchtxt.Text, "Not Found");
+                    return;
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
     }
 }

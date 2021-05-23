@@ -33,6 +33,11 @@ namespace Aplication
             return clientRepository.remove(id); 
         }
 
-       
+        public int edit(Client client)
+        {
+            return clientRepository.edit(client);
+        }
+
+
     }
 }
