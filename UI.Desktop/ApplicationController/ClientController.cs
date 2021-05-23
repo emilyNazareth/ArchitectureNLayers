@@ -54,5 +54,19 @@ namespace UI.Desktop.ApplicationController
         {
             var clientList = new ClientService().remove(id);
         }
+
+        public void edit(ClientViewModel clientModel)
+        {
+            Client client = new Client();
+            client.ID = clientModel.ID;
+            client.Name = clientModel.Name;
+            client.LastName = clientModel.LastName;
+            client.Address = clientModel.Address;
+            client.City = clientModel.City;
+            client.Email = clientModel.Email;
+            client.Phone = clientModel.Phone;
+            client.Job = clientModel.Job;
+            var editResult = new ClientService().edit(client);
+        }
     }
 }
