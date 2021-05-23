@@ -59,5 +59,10 @@ namespace UI.Desktop.Forms
             txtEmail.Clear();
             txtJob.Clear();
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

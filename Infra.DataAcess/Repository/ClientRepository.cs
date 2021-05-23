@@ -42,9 +42,9 @@ namespace Infra.DataAcess.Repository
             SqlDataReader readRows;
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
-            command.CommandText = "VerRegistros";
+            command.CommandText = "sp_get_registers";
             command.CommandType = CommandType.StoredProcedure;
-           // command.Parameters.AddWithValue("@condition", filter);
+            //command.Parameters.AddWithValue("@id_", filter);
             connection.Open();
             readRows = command.ExecuteReader();
 
