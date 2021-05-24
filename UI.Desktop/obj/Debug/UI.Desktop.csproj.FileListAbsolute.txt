@@ -36,3 +36,5 @@ C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\U
 C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
 C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.exe
 C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.Forms.InsertForm.resources
+C:\Users\David\Documents\UCR\2021\Ingeniería\TareaNCapas\UI.Desktop\obj\Debug\UI.Desktop.Forms.ModifyForm.resources
