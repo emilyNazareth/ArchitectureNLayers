@@ -11,7 +11,6 @@ namespace UI.Desktop.ApplicationController
 {
     class ClientController
     {
-
         public void add(string name, string lastName, string address, string city,
             string email, string phone, string job)
         {
@@ -47,7 +46,6 @@ namespace UI.Desktop.ApplicationController
             }
 
             return viewModels;
-
         }
 
         public void remove(int id)

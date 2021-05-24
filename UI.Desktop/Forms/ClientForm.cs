@@ -15,6 +15,8 @@ namespace UI.Desktop.Forms
     public partial class ClientForm : Form
     {
         private ClientController client;
+        private InsertForm insertForm;
+        private ModifyForm modifyForm;
         public ClientForm()
         {
             InitializeComponent();
@@ -30,7 +32,6 @@ namespace UI.Desktop.Forms
         {
             client.remove(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));            
             dataGridView1.DataSource = client.GetClients("");
-            txtName.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,84 +50,61 @@ namespace UI.Desktop.Forms
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
-        {      
-            client.add(txtName.Text, txtLastName.Text, txtAddress.Text, txtCity.Text, 
-               txtEmail.Text, txtPhone.Text,txtJob.Text);
-            dataGridView1.DataSource = client.GetClients("");
-            txtName.Clear();
-            txtLastName.Clear();
-            txtAddress.Clear();
-            txtCity.Clear();
-            txtEmail.Clear();
-            txtJob.Clear();
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
         {
-
+            insertForm = new InsertForm();
+            insertForm.ShowDialog();
+            if (insertForm.IsDisposed)
+            {
+                dataGridView1.DataSource = client.GetClients("");
+            }
+            
         }
+
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-            //btnInsert.Dispose();
             ClientViewModel clientModel = (ClientViewModel)dataGridView1.CurrentRow.DataBoundItem;
-            if(txtName.Text != "")
-                clientModel.Name = txtName.Text;
-            if(txtLastName.Text != "")
-                clientModel.LastName = txtLastName.Text;
-            if (txtAddress.Text != "")
-                clientModel.Address = txtAddress.Text;
-            if (txtCity.Text != "")
-                clientModel.City = txtCity.Text;
-            if (txtEmail.Text != "")
-                clientModel.Email = txtEmail.Text;
-            if (txtJob.Text != "")
-                clientModel.Job = txtJob.Text;
-            if (txtPhone.Text != "")
-                clientModel.Phone = txtPhone.Text;
-
-            client.edit(clientModel);
-
-            dataGridView1.DataSource = client.GetClients("");
-            txtName.Clear();
-            txtLastName.Clear();
-            txtAddress.Clear();
-            txtCity.Clear();
-            txtEmail.Clear();
-            txtJob.Clear();
+            modifyForm = new ModifyForm(clientModel);
+            modifyForm.ShowDialog();
+            if (modifyForm.IsDisposed)
+            {
+                dataGridView1.DataSource = client.GetClients("");
+            }
         }
 
         private void searchbtn_Click(object sender, EventArgs e)
         {
-            string searchValue = searchtxt.Text;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            try
+            if(searchtxt.Text != "")
             {
-                bool valueResult = false;
-                foreach (DataGridViewRow row in dataGridView1.Rows)
+                string searchValue = searchtxt.Text;
+                int rowIndex = -1;
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                try
                 {
-                    for (int i = 0; i < row.Cells.Count; i++)
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
-                        if (row.Cells[i].Value != null && row.Cells[i].Value.ToString().Contains(searchValue))
+                        if (row.Cells[0].Value.ToString().ToLower().Contains(searchValue.ToLower()))
                         {
-                            int rowIndex = row.Index;
-                            dataGridView1.Rows[rowIndex].Selected = true;
-                            valueResult = true;
+                            rowIndex = row.Index;
+                            dataGridView1.ClearSelection();
+                            row.Selected = true;
+                            dataGridView1.FirstDisplayedScrollingRowIndex = rowIndex;
+                            dataGridView1.Focus();
                             break;
                         }
                     }
-
                 }
-                if (!valueResult)
+                catch (Exception)
                 {
-                    MessageBox.Show("Unable to find " + searchtxt.Text, "Not Found");
-                    return;
+                    MessageBox.Show("No solutions with that name.");
                 }
             }
-            catch (Exception exc)
+            else
             {
-                MessageBox.Show(exc.Message);
+               // dataGridView1.DataSource = client.GetClients("");
             }
+            
         }
+
     }
 }
